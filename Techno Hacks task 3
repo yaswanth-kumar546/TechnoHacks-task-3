@@ -1,0 +1,31 @@
+#Welcome to the simple calculator
+def get_user_input():
+    while True:
+        try:
+            num1 = float(input("Enter the first number: ")) 
+            operation = input("Enter an operation (+, -, *, /): ")
+            if operation not in ['+', '-', '*', '/']:
+                raise ValueError("Invalid operation")
+            num2 = float(input("Enter the second number: "))
+            return num1, operation, num2
+        except ValueError as e:
+            print(f"Invalid input: {e}. Please try again.")
+#Calculate() Function
+def calculate(num1, operation, num2):
+    if operation == '+': return num1 + num2
+    if operation == '-': return num1 - num2
+    if operation == '*': return num1 * num2
+    if operation == '/': return None if num2 == 0 else num1 / num2
+#Calculator() Function
+def calculator():
+    while True:
+        num1, operation, num2 = get_user_input()
+        result = calculate(num1, operation, num2)
+        if result is not None:
+            print(f"The result is: {result}")
+
+        if input("Do you want to perform another calculation? (yes/no): ").lower() != 'yes':
+            break
+#Main Execution
+if __name__ == "__main__":
+    calculator()
