@@ -1,0 +1,19 @@
+NAME: Yejarla Yaswanth Kumar
+COMPANY: TechnoHacks Solutions PVT LTD
+DOMAIN: python Development
+INTERN ID: 
+DURATION: 15th January to 15th February 
+
+OVER VIEW OF THE PROJECT:
+
+This project is a simple calculator application created using Python. It allows users to perform basic arithmetic operations like addition(+), subtraction(-), multiplication(*), and division(/).
+**FEATURES:
+   * User Input: Prompts the user to input two numbers and choose an arithmetic operation (+, -, *, /).
+   * Error Handling: Validates user inputs to ensure they are correct (e.g., valid numbers and operations) and handles divisions by zero.
+   * Continuous Use: After performing a calculation, the user is asked if they would like to perform another calculation.
+
+Future Enhancements:
+   * Add support for more complex mathematical operations (e.g., exponentiation, square roots).
+   * Implement a graphical user interface (GUI) for a more user-friendly experience.
+   * Allow users to save and load previous calculation results.
+   * Add a history feature to keep track of past calculations.
